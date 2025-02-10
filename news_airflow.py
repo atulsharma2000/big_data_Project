@@ -15,37 +15,37 @@ dag = DAG(
 )
 
 with dag:
-    # Define the FileSensor to wait for a file
+    # defining the FileSensor to wait for a file
     wait_for_file = FileSensor(
         task_id='wait_for_file',
-        filepath='/home/atul/Desktop/project_big_data/data.csv',  # path to the file you are waiting for
+        filepath='/home/atul/Desktop/project_big_data/data.csv',  # path to the file we are waiting for
         poke_interval=10,  # check every 10 seconds
         timeout=600  # timeout after 600 seconds
     )
 
     producer_task = BashOperator(
         task_id='producer',
-        bash_command='python3 /home/atul/Desktop/project_big_data/Big_data_Project/producer.py',
+        bash_command='python3 /home/atul/Desktop/big-data-project/big_data_Project/producer.py',
     )
 
     consumer_task = BashOperator(
         task_id='consumer',
-        bash_command='python3 /home/atul/Desktop/project_big_data/Big_data_Project/consumer.py',
+        bash_command='python3 /home/atul/Desktop/big-data-project/big_data_Project/consumer.py',
     )
 
     data_cleaning_task = BashOperator(
         task_id='data_cleaning',
-        bash_command='python3 /home/atul/Desktop/project_big_data/Big_data_Project/clean_in_spark.py',
+        bash_command='python3 /home/atul/Desktop/big-data-project/big_data_Project/clean_in_spark.py',
     )
 
     news_sentiment_task = BashOperator(
         task_id='news_sentiment',
-        bash_command='python3 /home/atul/Desktop/project_big_data/Big_data_Project/news_sentiment_in_hdfs.py',
+        bash_command='python3 /home/atul/Desktop/big-data-project/big_data_Project/news_sentiment_in_hdfs.py',
     )
     
     zeroShot_classification_task = BashOperator(
         task_id='zeroShot_classification',
-        bash_command='python3 /home/atul/Desktop/project_big_data/Big_data_Project/zeroShot_classification.py',
+        bash_command='python3 /home/atul/Desktop/big-data-project/big_data_Project/zeroShot_classificatioN.py',
     )
 
     # Set task dependencies
