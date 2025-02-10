@@ -1,4 +1,4 @@
-# Big Data Project: Real-time News Sentiment Analysis and Zero-Shot Classification
+# Big Data Project: News Data Mangement from cleaning the data to Real-time News Sentiment Analysis and Zero-Shot Classification
 
 ## Overview
 
