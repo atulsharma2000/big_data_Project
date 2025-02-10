@@ -1,0 +1,11 @@
+apache-airflow==2.9.0
+apache-airflow-providers-apache-hdfs==4.3.3
+kafka-python==2.0.2
+pyspark==3.5.4
+nltk==3.9.1
+transformers==4.40.0 
+torch==2.3.0 
+pandas==2.1.4 
+
+
+# alot more , but that you have to do according to your system config
