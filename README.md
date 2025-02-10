@@ -70,8 +70,8 @@ The `zeroShot_classificatioN.py` script uses Hugging Face's Transformers library
 
 1.  **Clone the repository:**
     ```
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/atulsharma2000/big_data_Project.git
+    cd https://github.com/atulsharma2000/big_data_Project.git
     ```
 
 2.  **Install dependencies:**
@@ -85,12 +85,12 @@ The `zeroShot_classificatioN.py` script uses Hugging Face's Transformers library
 
 4.  **Configure Apache Kafka:**
     *   Install and start ZooKeeper and Kafka.
-    *   Create a Kafka topic to which the producer will publish data.
+    *   Create a Kafka topic (news_topic) to which the producer will publish data.
     *   Update the `producer.py` and `consumer.py` scripts with the correct Kafka broker address and topic name.
 
 5.  **Configure Apache Spark:**
     *   Install Apache Spark.
-    *   Ensure that Spark is correctly configured to run in your environment (local, standalone, or cluster).
+    *   Ensure that Spark is correctly configured to run in your environment.
 
 6.  **Hugging Face Transformers:**
     * Make sure `torch` is installed, as it's a dependency for the transformers library. The `requirements.txt` should handle this. Also, the first time you run the zero-shot classification script, it will download the necessary model, which can take some time.
@@ -109,11 +109,10 @@ The `zeroShot_classificatioN.py` script uses Hugging Face's Transformers library
 *   **Scalability:** Implement Spark on a cluster to handle large datasets more efficiently.
 *   **Data Validation:** Add data validation steps to ensure data quality.
 *   **Monitoring:** Implement monitoring to track the performance of the pipeline.
-*   **Implement other Machine Learning techniques:** Such as clustering or predictive analytics using the sentiment scores and classified data.
 *   **Refine Zero-Shot Classification:** Experiment with different pre-trained models and candidate labels to improve the accuracy of zero-shot classification.
-*   **Implement a Data Lake/Warehouse:** Store the processed data in a data lake (e.g., using Apache Hadoop or AWS S3) or a data warehouse (e.g., using Apache Hive or Snowflake) for long-term storage and analysis.
+*   **Implement a Data Lake/Warehouse:** Store the processed data in a famous data lake ( AWS S3) or a data warehouse (Hive or Snowflake) for long-term storage and analysis.
 *   **Implement REST API:** To access and visualize the data.
 
 ## Author
 
-Atul
+Atul Sharma
