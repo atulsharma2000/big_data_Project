@@ -1,8 +1,8 @@
-# Big Data Project: News Data Mangement from cleaning the data to Real-time News Sentiment Analysis and Zero-Shot Classification
+# News Data Management: Real-time Cleaning, Sentiment Analysis and Zero-Shot Classification Pipeline
 
 ## Overview
 
-This project implements a real-time news sentiment analysis and zero-shot classification pipeline using Apache Airflow, Kafka, Spark, and Hugging Face's Transformers. It automates the process of ingesting news data, transforming and cleaning it, performing sentiment analysis, and categorizing news articles using zero-shot classification.
+The News Data Management project is an end-to-end system for processing and analyzing news data in real time. It automates the ingestion, transformation, sentiment analysis, and categorization of news articles, leveraging Apache Airflow, Kafka, Spark, and Hugging Face's Transformers. This project aims to provide timely insights into public sentiment and categorize news topics efficiently.
 
 ## Architecture
 
